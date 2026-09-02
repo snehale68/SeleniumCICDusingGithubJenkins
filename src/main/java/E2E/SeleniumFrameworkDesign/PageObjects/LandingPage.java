@@ -37,7 +37,7 @@ public class LandingPage extends ReusableComponents {
 		userPassword.sendKeys(password);
 		waitForWebElementToBeClickable(loginButton);
 		loginButton.click();
-		System.out.println("User is logged in now as "+email);
+		System.out.println("User is logged in: "+email);
 		ProductCataloguePage productCataloguePage = new ProductCataloguePage(driver);
 		return productCataloguePage;
 	}
